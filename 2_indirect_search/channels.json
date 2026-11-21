@@ -1,0 +1,72 @@
+{
+ "q0": {
+  "baryon_like_max": 0.002710345285010942,
+  "mass_like_max": 0.049226350176640295,
+  "alpha_isl_0p5m": 0.002423233551713214,
+  "alpha_isl_curve": {
+   "0.05": 0.0020278382900069964,
+   "0.1": 0.0016404990927572248,
+   "0.2": 0.001586046213998602,
+   "0.5": 0.002423233551713214,
+   "1": 0.00530171238468339,
+   "2": 0.01529147125062306,
+   "5": 0.07793811086662195
+  }
+ },
+ "nuclear_self_energy": {
+  "check_mean_inverse_distance_unit_ball": 1.2002818104966604,
+  "expected": 1.2,
+  "E_unit_eV_A298": -7.635848491477748e-27,
+  "E_unit_eV_A289": -7.255376162123345e-27,
+  "qnuc_for_1MeV_A289": 1.1740052340071934e+16
+ },
+ "alpha_barrier": {
+  "gamow_factor": 47.00013609656964,
+  "dlog10T_per_unit_P_numeric": -1.548632374202902e-34,
+  "dlog10T_per_unit_P_analytic": -1.5330455778914346e-34,
+  "P_needed_for_0p1_dex": 6.522963272725456e+32
+ },
+ "atomic_1s": {
+  "mean_inv_r_numeric": 2154287782073.3777,
+  "analytic": 2154287782073.378,
+  "shift_eV_per_unit_P": 3.923150638019996e-34,
+  "P_for_1GHz": 1.054169997155939e+28
+ },
+ "penning_trap": {
+  "unperturbed": {
+   "sum_pm_minus_wc": -3.6662870422733323e-14,
+   "invariance": 6.196822120364165e-14
+  },
+  "perturbed_P1e10": {
+   "sum_pm_minus_wc": -3.6662870422733323e-14,
+   "invariance": -1.7135906828016662e-13
+  },
+  "axial_shift_rel_eig": 9.378925144651923e-08,
+  "axial_shift_rel_timedomain": 0.0,
+  "note": "nu+ + nu- = nu_c and the invariance theorem hold exactly for any kappa: blind"
+ },
+ "weighing": {
+  "a_yuk_per_P_analytic": 5.661341598920676e-07,
+  "a_yuk_per_P_numeric": 5.661330276248693e-07,
+  "fractional_weight_change_per_P": 5.772961815625801e-08
+ },
+ "gas_transport": {
+  "D_m2s": 4.4116570698055256e-05,
+  "drift_m_per_s_per_P": 2.9428135581245687e-15,
+  "P_for_1mm_in_1s": 339810857959.1063,
+  "P_for_kT_over_10cm": 149912897391.19724
+ },
+ "recoil_separator": {
+  "v_m_s": 5168050.160893328,
+  "flight_s": 5.804897217718631e-07,
+  "deflection_m_per_P": 9.538463755095033e-20,
+  "P_for_1mm": 1.048386853140626e+16
+ },
+ "environmental_Q": {
+  "U_eV_per_P": 8.478634448973361e-13,
+  "P_for_10keV": 1.1794352097832044e+16
+ },
+ "fission_TKE": {
+  "qnuc_for_10MeV_A286": 3.744954462085898e+16
+ }
+}

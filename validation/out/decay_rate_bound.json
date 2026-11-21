@@ -1,0 +1,113 @@
+{
+ "B_U": 7.340820111271378e-06,
+ "Q0_B": 0.0027093947868982436,
+ "U238_half_life_s": 1.408415688e+17,
+ "nuclides_with_alpha_rate": 696,
+ "results": {
+  "all measured": {
+   "witnesses": 1234,
+   "0.1 MeV": {
+    "k_max": 0.5847663485123973,
+    "nuclide": "Z=4 N=4 (A=8)",
+    "kind": "mass",
+    "half_life_s": 8.190000000000001e-17
+   },
+   "1 MeV": {
+    "k_max": 0.599810527118439,
+    "nuclide": "Z=4 N=4 (A=8)",
+    "kind": "mass",
+    "half_life_s": 8.190000000000001e-17
+   },
+   "10 MeV": {
+    "k_max": 0.6148547057244806,
+    "nuclide": "Z=4 N=4 (A=8)",
+    "kind": "mass",
+    "half_life_s": 8.190000000000001e-17
+   }
+  },
+  "living at least 1 ns": {
+   "witnesses": 1231,
+   "0.1 MeV": {
+    "k_max": 0.7386891828049729,
+    "nuclide": "Z=93 N=127 (A=220)",
+    "kind": "mass",
+    "half_life_s": 2.9e-08
+   },
+   "1 MeV": {
+    "k_max": 0.758943304910352,
+    "nuclide": "Z=93 N=127 (A=220)",
+    "kind": "mass",
+    "half_life_s": 2.9e-08
+   },
+   "10 MeV": {
+    "k_max": 0.7791974270157311,
+    "nuclide": "Z=93 N=127 (A=220)",
+    "kind": "mass",
+    "half_life_s": 2.9e-08
+   }
+  }
+ },
+ "Be8": {
+  "half_life_s": 8.190000000000001e-17,
+  "eself_MeV_at_k06": 1.0294243380823582,
+  "factor_per_0p1_in_k": 4436999.608874095
+ },
+ "superheavy_alpha_rate_decades": {
+  "n": 25,
+  "min": 15.245640866933813,
+  "max": 20.303632813911502
+ },
+ "fission": {
+  "U238_sf_branch": 5.44e-07,
+  "nuclides_with_fission_rate": 104,
+  "results": {
+   "all measured": {
+    "witnesses": 139,
+    "0.1 MeV": {
+     "k_max": 0.6880760927559548,
+     "nuclide": "Z=114 N=172 (A=286)",
+     "kind": "Q_alpha",
+     "half_life_s": 0.13
+    },
+    "1 MeV": {
+     "k_max": 0.7070351110960597,
+     "nuclide": "Z=114 N=172 (A=286)",
+     "kind": "Q_alpha",
+     "half_life_s": 0.13
+    },
+    "10 MeV": {
+     "k_max": 0.7259942592720963,
+     "nuclide": "Z=114 N=172 (A=286)",
+     "kind": "Q_alpha",
+     "half_life_s": 0.13
+    }
+   },
+   "living at least 1 ns": {
+    "witnesses": 139,
+    "0.1 MeV": {
+     "k_max": 0.6880760927559548,
+     "nuclide": "Z=114 N=172 (A=286)",
+     "kind": "Q_alpha",
+     "half_life_s": 0.13
+    },
+    "1 MeV": {
+     "k_max": 0.7070351110960597,
+     "nuclide": "Z=114 N=172 (A=286)",
+     "kind": "Q_alpha",
+     "half_life_s": 0.13
+    },
+    "10 MeV": {
+     "k_max": 0.7259942592720963,
+     "nuclide": "Z=114 N=172 (A=286)",
+     "kind": "Q_alpha",
+     "half_life_s": 0.13
+    }
+   }
+  },
+  "superheavy_fission_rate_decades": {
+   "n": 42,
+   "min": 18.394431455561335,
+   "max": 28.053296471887688
+  }
+ }
+}

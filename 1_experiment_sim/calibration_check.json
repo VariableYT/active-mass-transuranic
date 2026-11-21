@@ -1,0 +1,28 @@
+{
+ "sigmaP_1day_first_report": 0.0005207201279087412,
+ "s_prov": 5.627078943664284e-05,
+ "sigma_sys": 1.2394759347210568e-05,
+ "big_400x90d": {
+  "sigma_day": 0.0005641045062296536,
+  "se_frac": 0.03539961627023943,
+  "excess_kurtosis": 0.0717899608205399,
+  "frac_beyond_3sigma": 0.005,
+  "mad_sigma_day": 0.0005884370547211353
+ },
+ "pooled_90d_sigma_day": 0.0005481734491792051,
+ "pooled_factor": 1.052721836163159,
+ "pooled_n": 520,
+ "pooled_se_frac": 0.03103854276221004,
+ "replay": {
+  "sd_tot": 4.820889708056608e-05,
+  "sd_stat_detection_map": 4.658827855211382e-05,
+  "factor_detection_map": 0.8487769029558463,
+  "sd_stat_bias_removed": 4.8620883318787566e-05,
+  "factor_bias_removed": 0.8858082772072213,
+  "realised_bias_sd": 1.2862076923727597e-05,
+  "corr_bias_vs_noise": -0.16416443359235525
+ },
+ "null_90d_sigma_day": 0.000519708935036363,
+ "null_30d_sigma_day": 0.0005756987324971339,
+ "se_frac_60": 0.09205746178983235
+}

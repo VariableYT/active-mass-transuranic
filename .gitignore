@@ -1,0 +1,6 @@
+__pycache__/
+_shipped/
+*.pyc
+# third-party tables are fetched by data/fetch_data.py, never committed
+residual_analyzer/raw/
+WS_mass_table.txt

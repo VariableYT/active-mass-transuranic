@@ -1,0 +1,140 @@
+{
+ "AME2020": {
+  "ref": "M. Wang et al., Chin. Phys. C 45, 030003 (2021)",
+  "url": "https://www-nds.iaea.org/amdc/",
+  "files": {
+   "mass.mas20": "05b054a0538f2c308d061b22096f94a944f1603a5b0948a62e5171657601c674",
+   "rct1.mas20": "e6ba1d2256f90053464c48e24d44691828dc49820ce64054aa418d834cc18e90"
+  },
+  "nuclides": 3558,
+  "measured_masses": 2550,
+  "estimated_masses": 1008,
+  "ME_4He_keV": 2424.91587,
+  "qalpha_cross_check_max_keV": 0.0009700000023258326
+ },
+ "WS-Ma2019": {
+  "ref": "N.-N. Ma et al., Chin. Phys. C 43, 044105 (2019); pure model column (no RBF correction)",
+  "url": "https://github.com/lukeronger/NuclearData-LZU (NuclearData/data_table.txt)",
+  "family": "macroscopic-microscopic",
+  "file": "ws_ma2019/WS_mass_table.txt",
+  "sha256": "a928998d982bf5c7768133676ee0a9975986fc25a89245029e3df45d66a22cf3",
+  "bytes": 1553570,
+  "rows": 12435,
+  "rows_rejected": 0,
+  "Zmax": 128,
+  "rms_vs_AME2020_keV": {
+   "all_measured": 517.0,
+   "n_all": 2457,
+   "Z_ge_82": 380.5,
+   "n_Z_ge_82": 508
+  },
+  "spot_ME_minus_AME_keV": {
+   "8,8": 3719.7,
+   "82,126": 478.4,
+   "92,146": -91.8,
+   "94,150": -123.6,
+   "96,152": 61.5,
+   "114,175": -1701.0
+  }
+ },
+ "WS4": {
+  "ref": "N. Wang, M. Liu, X. Wu, J. Meng, Phys. Lett. B 734, 215 (2014)",
+  "url": "http://www.imqmd.com/mass/WS4.txt",
+  "family": "macroscopic-microscopic",
+  "file": "ws4/WS4.txt",
+  "sha256": "9492ef1451a72321d12d1ebe496570e0d8f3ed491de22a25b64b950859d8de3e",
+  "bytes": 1260631,
+  "rows": 10237,
+  "rows_rejected": 0,
+  "Zmax": 132,
+  "rms_vs_AME2020_keV": {
+   "all_measured": 294.6,
+   "n_all": 2457,
+   "Z_ge_82": 244.8,
+   "n_Z_ge_82": 508
+  },
+  "spot_ME_minus_AME_keV": {
+   "8,8": 370.9,
+   "82,126": 480.5,
+   "92,146": -26.6,
+   "94,150": -203.8,
+   "96,152": -262.4,
+   "114,175": -2628.6
+  }
+ },
+ "FRDM2012": {
+  "ref": "P. Moller, A. J. Sierk, T. Ichikawa, H. Sagawa, At. Data Nucl. Data Tables 109-110, 1 (2016)",
+  "url": "arXiv:1508.06294v1; text from: pdftotext -raw -enc UTF-8 (reproduces every row of the file used)",
+  "family": "macroscopic-microscopic",
+  "file": "frdm2012/frdm_text.txt",
+  "sha256": "8184415c2e321716dd072075aec67b0495615792dea31c86f890d87832492b23",
+  "bytes": 1315642,
+  "rows": 9318,
+  "rows_rejected": 0,
+  "Zmax": 136,
+  "rms_vs_AME2020_keV": {
+   "all_measured": 606.0,
+   "n_all": 2457,
+   "Z_ge_82": 375.2,
+   "n_Z_ge_82": 508
+  },
+  "spot_ME_minus_AME_keV": {
+   "8,8": -413.0,
+   "82,126": 828.5,
+   "92,146": 52.3,
+   "94,150": -416.0,
+   "96,152": -532.7,
+   "114,175": -5625.0
+  }
+ },
+ "HFB-24": {
+  "ref": "S. Goriely, N. Chamel, J. M. Pearson, Phys. Rev. C 88, 024308 (2013)",
+  "url": "https://www.astro.ulb.ac.be/bruslib/nucdata/hfb24-dat",
+  "family": "self-consistent mean field (Skyrme HFB)",
+  "file": "hfb24/hfb24-dat",
+  "sha256": "23ced4dcf37a9ba7a06130dce16f9148a17e4591118857c6779e3ff06a76f63e",
+  "bytes": 847895,
+  "rows": 8392,
+  "rows_rejected": 0,
+  "Zmax": 110,
+  "rms_vs_AME2020_keV": {
+   "all_measured": 562.5,
+   "n_all": 2457,
+   "Z_ge_82": 457.3,
+   "n_Z_ge_82": 508
+  },
+  "spot_ME_minus_AME_keV": {
+   "8,8": 1987.0,
+   "82,126": -191.5,
+   "92,146": 502.3,
+   "94,150": -126.0,
+   "96,152": 187.3,
+   "114,175": null
+  }
+ },
+ "KTUY05": {
+  "ref": "H. Koura, T. Tachibana, M. Uno, M. Yamada, Prog. Theor. Phys. 113, 305 (2005)",
+  "url": "https://wwwndc.jaea.go.jp/nucldata/mass/KTUY05_m246.dat",
+  "family": "gross + spherical-basis shell terms",
+  "file": "ktuy05/KTUY05_m246.dat",
+  "sha256": "bf4b22407902c38ffbdbb0b0659857f1aaf3a7407e0ae852c609ac67f1d93901",
+  "bytes": 434102,
+  "rows": 9436,
+  "rows_rejected": 0,
+  "Zmax": 130,
+  "rms_vs_AME2020_keV": {
+   "all_measured": 743.2,
+   "n_all": 2538,
+   "Z_ge_82": 901.7,
+   "n_Z_ge_82": 508
+  },
+  "spot_ME_minus_AME_keV": {
+   "8,8": 1057.0,
+   "82,126": 408.5,
+   "92,146": -617.7,
+   "94,150": -316.0,
+   "96,152": 217.3,
+   "114,175": -955.0
+  }
+ }
+}
