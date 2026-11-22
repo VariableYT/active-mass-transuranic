@@ -31,6 +31,7 @@ JSONS = [
     "1_experiment_sim/u_stage_refine.json",
     "1_experiment_sim/calibration_check.json",
     "1_experiment_sim/instrument_calibration.json",
+    "1_experiment_sim/noise_scaling.json",
     "2_indirect_search/channels.json",
     "2_indirect_search/data_test.json",
     "2_indirect_search/data_test_robust.json",
@@ -108,7 +109,7 @@ def diff(a, b, path="", out=None, rtol=1e-12, atol=1e-300):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--full", action="store_true", help="rerun the simulations and fits (about 11 minutes)")
+    ap.add_argument("--full", action="store_true", help="rerun the simulations and fits (about 17 minutes)")
     ap.add_argument("--mass-models", action="store_true", help="rerun only the mass-model check (about 2 minutes)")
     ap.add_argument("--check", action="store_true", help="compare only; run nothing")
     args = ap.parse_args()
@@ -128,6 +129,7 @@ def main():
         run("1_experiment_sim", "u_stage_refine.py")
         run("1_experiment_sim", "calibration_check.py")
         run("1_experiment_sim", "instrument_calibration.py")
+        run("1_experiment_sim", "noise_scaling.py")
         run("2_indirect_search", "channels.py")
         run("2_indirect_search", "data_test.py")
         run("2_indirect_search", "data_test_robust.py")

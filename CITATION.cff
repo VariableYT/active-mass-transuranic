@@ -5,12 +5,12 @@ authors:
   - family-names: Grady
     given-names: Justin
     affiliation: Variable Systems
-version: v1
-date-released: 2026-11-20
-doi: 10.5281/zenodo.24410571
+version: v2
+date-released: 2026-11-22
+doi: 10.5281/zenodo.24410570
 license: MIT
 repository-code: "https://github.com/VariableYT/active-mass-transuranic"
-url: "https://doi.org/10.5281/zenodo.24410571"
+url: "https://doi.org/10.5281/zenodo.24410570"
 preferred-citation:
   type: generic
   title: "Active-mass tests with transuranic sources: a blind spot for composition-dependent forces"
@@ -21,4 +21,4 @@ preferred-citation:
   year: 2026
   publisher:
     name: Zenodo
-  doi: 10.5281/zenodo.24410571
+  doi: 10.5281/zenodo.24410570

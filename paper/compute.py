@@ -193,6 +193,9 @@ for X in ("Pu-244", "Cm-248", "U-238"):
     st = NUC[X]["sigma_day"] * EW_RATIO / np.sqrt(NUC[X]["days"])
     EOTWASH[X] = dict(sigma_day=NUC[X]["sigma_day"] * EW_RATIO, S=2 * float(np.hypot(st, NUC[X]["s_sys"])))
 VIENNA = INST["vienna"]
+# rev 5s: torque noise further above thermal (noise_scaling.py, common random numbers). The representative pendulum
+# is 1.14x thermal in amplitude at the exchange frequency; real balances reach about 1.6-2x under good conditions.
+NOISE = json.load(open(HAND / "1_experiment_sim" / "noise_scaling.json"))
 # independent check of the statistical error: thermal torque noise of the pendulum, point-mass signal torque
 KB = 1.380649e-23
 f_sig = 1 / (2 * PEND["T_half"])
@@ -753,6 +756,7 @@ nums = dict(PC=[PC_LO, PC_HI], D2U=D2U, B_U=B_U, B_of_lambda=B_OF_LAM, smith=SMI
                      cal_v4=CAL_V4, cal_check=CC, campaigns_v4=CAMP_V4, eotwash_ratio=EW_RATIO, eotwash=EOTWASH,
                      eotwash_asd=INST["analytic_thermal"]["eotwash_ep"]["asd_Nm_rtHz"],
                      rep_asd=INST["analytic_thermal"]["representative"]["asd_Nm_rtHz"], vienna=VIENNA,
+                     noise_scaling=NOISE,
                      U_multisep_seps_m=UREF["separations_m"],
                      lam_fit=[LAMFIT["lam_true"], LAMFIT["lam_best"]] + LAMFIT["lam_1sig"]),
             nuclides={k: {kk: vv for kk, vv in v.items()} for k, v in NUC.items()},
@@ -1179,6 +1183,11 @@ for X in ("U-238", "Pu-239", "Pu-242", "Pu-244", "Cm-248"):
     print(f"campaign {X}: {v['days']} d, sigma_day {v['sigma_day']:.2e}, stat {v['s_stat']:.2e}, sys {v['s_sys']:.2e}, S {v['S']:.2e}, T5 {v['T5']:.2e}")
 print(f"thermal-limit check of sigma_day (1 g at 2 cm): {SIG_DAY_THERMAL:.2e} vs simulated {NUC['Pu-244']['sigma_day']:.2e}")
 print(f"days for 1e-4 at 3 sigma (stat only): {(3 * NUC['Pu-244']['sigma_day'] / 1e-4) ** 2:.0f}")
+print("torque noise above thermal (beta at the exchange frequency; representative %.2f):" % NOISE["beta_representative"])
+for _k, _c in NOISE["cases"].items():
+    print("   %-15s beta %.2f: sigma_day Pu %.3g, days for 1e-4/3 %.0f, S U %.2g Pu %.2g Cm %.2g" % (
+        _k, _c["beta"], _c["sigmaP_day"]["244Pu"], _c["days_to_target_Pu244"], _c["campaigns"]["238U"]["S"],
+        _c["campaigns"]["244Pu"]["S"], _c["campaigns"]["248Cm"]["S"]))
 print("residual:", {k: f"{v:.2g}" for k, v in RESID.items()}, " ferro spec:", f"{P_FERRO_SPEC:.2g}", "worst", f"{P_FERRO_WORST:.2g}", " heat 242:", HEAT_242)
 print(f"5 sigma: Gaussian Pu-244 P_c >= {pc_gauss(1, level='T5'):.3g}; Pu-242 >= {pc_gauss(1, 'Pu-242', 'T5'):.3g}; power law P_c >= {pc_power(1, level='T5'):.3g} (k >= {K_T5:.0f})")
 for lam, r in RANGE.items():

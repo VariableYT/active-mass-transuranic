@@ -46,7 +46,7 @@
 \affiliation{Variable Systems, United States}
 \email{justin@variable-systems.com}
 
-\date{November 20, 2026}
+\date{November 22, 2026}
 
 \begin{abstract}
 Every laboratory test of the universality of gravity that we know of has used matter no heavier than uranium, so a scalar coupling to a nuclear charge that is negligible for $Z\le92$ but rises steeply above it would
@@ -57,7 +57,7 @@ gravity at a range of 0.5~m, if ordinary matter's charge varies like baryon numb
 energies limit the strength at the island of stability to about $10^{14}$ times gravity. Four phenomenological
 benchmarks map what these bounds allow: two switches tied to a nuclide's place on the chart and charges following
 the alpha-decay and fission rates. A simulated torsion-balance comparison of a gram of plutonium with a tungsten
-dummy reaches $1.2\times10^{-4}$ in 90 days. With \Pu{244} it would detect the broadest allowed island-centered
+dummy reaches $1.2\times10^{-4}$ in 90 days near the balance's thermal limit, and $2\times10^{-4}$ at twice that noise. With \Pu{244} it would detect the broadest allowed island-centered
 switch for central strengths above about 1500 times gravity; the rate benchmarks would show at up to 250 times the
 reach, and the pattern across \Pu{239}, \Pu{242}, \Pu{244} and \nuc{248}{Cm} tells the
 benchmarks apart. A test body of the source's own nuclide adds
@@ -432,12 +432,23 @@ domain for a representative room-temperature pendulum, not a specific instrument
 $10^{-5}$~kg\,m$^2$, free period 600~s, quality factor 4000, a 3~g copper test body on a 2~cm arm, and a
 source--dummy exchange every 600~s. Its thermal torque noise is 0.9~fN\,m\,Hz$^{-1/2}$ at the exchange frequency,
 comparable to that of existing balances~\cite{Wagner2012,Adelberger2009}; the simulation adds excess low-frequency
-torque noise and angle-readout noise, and analyzes the record by drift-canceling demodulation. For one gram at
+torque noise, which leaves the total 1.14 times thermal at the exchange frequency, and angle-readout noise, and
+analyzes the record by drift-canceling demodulation. For one gram at
 2~cm the statistical error on $P$ after one day is $\sigma_{\rm day}=5.5\times10^{-4}$, from 520 simulated 90-day
 records, and it falls as the inverse square root of the integration time (the scatter of the records is Gaussian).
-With thermal noise alone it would be $5.1\times10^{-4}$, 1.6 times the thermal limit of a continuous measurement,
+With thermal noise alone it would be $4.8\times10^{-4}$, 1.5 times the thermal limit of a continuous measurement,
 $3.1\times10^{-4}$, mainly because the source sits in front of the test body only half the time. A statistical
 error of $10^{-4}/3$ therefore takes about nine months.
+
+That pendulum is close to ideal. Coming near the thermal limit takes low gas pressure, magnetic shielding,
+gold-coated surfaces against stray electrostatic fields, and torsion and pendulum modes well separated in
+frequency~\cite{Adelberger2009}, and torque noise 1.6 to 2 times thermal is the more cautious assumption for a new
+apparatus. We repeated the simulation at those two levels with the same noise draws (300 records of 90 days in each
+case). The statistical error grows in proportion: $\sigma_{\rm day}=7.6\times10^{-4}$ and $9.5\times10^{-4}$, the
+nine months become about 17 and 27 months, and the 90-day plutonium reach of Table~\ref{tab:campaign} goes from
+$1.2\times10^{-4}$ to $1.6\times10^{-4}$ and $2.0\times10^{-4}$. Whether the excess rises toward low frequencies or is
+spread evenly changes these numbers by less than 3\%. The uranium stage, limited by systematic errors, barely moves,
+from $3.1\times10^{-5}$ to $3.2\times10^{-5}$ at twice thermal.
 
 The representative fiber is not exotic. The E\"ot-Wash equivalence-principle balance, whose 20~$\mu$m tungsten fiber
 has $\kappa=2.34\times10^{-9}$~N\,m\,rad$^{-1}$ and $Q=5000$~\cite{Schlamminger2008} and which operates close to its
@@ -792,7 +803,7 @@ The apparatus exists; what is needed is access to the samples.
 
 \textit{Data availability.} The scripts that generate every number, table and figure in this paper, including the
 time-domain simulation of the measurement and the fit to superheavy decay energies, are on Zenodo,
-\href{https://doi.org/10.5281/zenodo.24410571}{doi:10.5281/zenodo.24410571}.
+\href{https://doi.org/10.5281/zenodo.24410570}{doi:10.5281/zenodo.24410570}.
 
 % =====================================================================
 \FloatBarrier
